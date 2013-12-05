@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Ribeye);
+@import url(http://fonts.googleapis.com/css?family=Sonsie+One);
+@import url(http://fonts.googleapis.com/css?family=Nosifer);
+@import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps);
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+@import url(http://fonts.googleapis.com/css?family=Vibur);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Vampiro+One);
+
+
+#kitten
+{
+position:absolute;
+height:674px;
+width:1200px;
+text-align:center;
+}
+
+#quote
+{
+position:absolute;
+left:40px;
+top:30px;
+height:180px;
+width:520px;
+background-color:white;
+padding:10px;
+}
+.blank
+{
+color:white;
+}
+
+.font1
+{
+font-family: 'Ribeye', cursive;
+font-size:130%;
+}
+
+.font2
+{
+font-family: 'Sonsie One', cursive;
+font-size:130%;
+}
+
+.font3
+{
+font-family: 'Nosifer', cursive;
+font-size:130%;
+}
+
+.font4
+{
+font-family: 'Bilbo Swash Caps', cursive;
+font-size:130%;
+}
+
+.font5
+{
+font-family: 'Orbitron', sans-serif;
+font-size:130%;
+}
+
+.font6
+{
+font-family: 'Vibur', cursive;
+font-size:130%;
+}
+
+.font7
+{
+font-family: 'Permanent Marker', cursive;
+font-size:130%;
+}
+
+.font8
+{
+font-family: 'Vampiro One', cursive;
+font-size:130%;
+}
+

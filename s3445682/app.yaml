@@ -1,0 +1,27 @@
+application: s3445682-s3425478
+version: 8
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: jinja2
+  version: latest
+
+handlers:
+- url: /
+  script: helloworld.application
+- url: /problemset
+  static_dir: problemset
+- url: /images
+  static_dir: images
+- url: /html
+  static_dir: html
+- url: /stylesheets
+  static_dir: stylesheets
+- url: /cats
+  static_dir: cats
+- url: /owners
+  static_dir: owners
+
+  

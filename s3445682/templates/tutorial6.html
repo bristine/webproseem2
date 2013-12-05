@@ -1,0 +1,15 @@
+<!DOCTYPE  html>
+{% autoescape true %}
+<html>
+<head>
+	<title>Tutorial6</title>
+</head>
+<body>
+	<p>Hello web programming, second page!</p>
+	{% for number in numbers %}
+		<p>Data from the view function: {{ number }}</p>
+	{% endfor %}
+</body>
+</html>
+{% endautoescape %}
+

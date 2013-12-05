@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Doppio+One);
+@import url(http://fonts.googleapis.com/css?family=Balthazar);
+body
+{
+display:table;
+}
+
+#row_0 , #row_1 , #row_2 , #row_3 , #row_4 , #row_5 , #row_6
+{
+display: table-row;
+}
+
+.symbol {font-size:110%;font-family: 'Doppio One', sans-serif; }
+.number , .name , .molar , .group {font-size:70%;font-family: 'Balthazar', serif;}
+
+
+.element
+{
+display:table-cell;
+border:1px solid #000000;
+text-align:right;
+width:90px;
+padding:3px;
+}
+
+

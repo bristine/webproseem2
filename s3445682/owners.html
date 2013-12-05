@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head>
+<title>Cat Owners</title>
+<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+</head>
+<body>
+<p>All cat owners.</p>
+{% for owners in cat_owners %}
+   <p>{{ owners.name }}</p>
+ {% endfor %}
+</body>
+</html>
+{% endautoescape %}

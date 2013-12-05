@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<meta charset="utf-8">
+
+	<title>Blog application</title>
+<head>	
+	<link rel="stylesheet" type="text/css" href="stylesheets/indexstyle.css">
+	<link
+href="//netdna.bootstrapcdn.com/twitter­bootstrap/2.3.2/css/bootstrap­combined.min.css"
+rel="stylesheet">
+ 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ 	
+</head>
+
+<body>
+	
+	
+	<div id="container">
+		
+		
+		
+		
+		
+	
+	
+		
+		
+		<div id="title">
+			<img src="images/titile.png" alt="titile" width="800" height="106">
+		</div>
+		
+		
+		<div id="header">
+			<img src="images/HfCURPU.gif" alt="header" width="921" height="307">
+		</div>
+		
+		<p id="welcome">Hello {{ nickname }} !</p>
+		<br>
+		
+		<div id="menu">
+		<div id="menublock">
+			<ul><li><a id="menulink" href='http://s3445682-s3425478.appspot.com/'>Home</a></li>
+  				<li><a id="menulink" href='problemset/problemset.html' target="_blank">Problem sets</a></li>
+  				<li>Tutorial
+    					<ul>
+      						<li><a id="menulink" href='html/Tutorial2.html' target="_blank">Tutorial 2</a></li>
+      						<li><a id="menulink" href='html/tutorial3.html' target="_blank">Tutorial 3</a></li>
+      						<li><a id="menulink" href='html/tutorial4.html' target="_blank">Tutorial 4</a></li>
+      						<li><a id="menulink" href='html/elements.html' target="_blank">Tutorial 5</a></li>
+    					</ul>
+  				</li>
+  				<li><a id="menulink" href='#footer'>About</a></li>
+  				
+  				
+			</ul>
+		</div>
+		</div>
+		
+		
+		
+		<!--Begin of main contain-->
+		<div id="maincontent">
+		
+		
+			<!--1-->
+			<article>
+		<h1 style="font-family: Arial; color: #001A36; text-align: center;x`">Introduction to HTML5</h1>
+	
+
+		<iframe width="640" height="480" src="//www.youtube.com/embed/r6rC95n8LTk?rel=0" frameborder="0" allowfullscreen></iframe>
+			</article>
+			
+			<hr>
+			
+			
+			<!--2-->
+			
+			<p>Big list of all cats.</p>
+ {% for cat in cats %}
+       <div class="cat" id="{{ cat.name }}">
+         <a href="/cat?name={{ cat.name }}">{{ cat.name }}</a>&nbsp;
+         {{ cat.description }}&nbsp;<img class="delete"
+src="//gcdn.org/glyphicons/bin.png">
+       </div>
+     {% endfor %}
+   <hr/>
+   <form action="/" method="post">
+     <div>
+       <label for="name">Cat name:</label>
+       <input type="text" name="name"/>
+     </div>
+     <div>
+       <label for="description">Description:</label>
+       <textarea name="description" rows="3" cols="60"></textarea>
+     </div>
+     <div>
+       <label for="owner">Owner:</label>
+       <input type="text" name="owner"/>
+     </div>
+     <fieldset>
+       <legend>Date of Birth</legend>
+       <div>
+         <label for="day">Day:</label>
+         <input type="text" name="day"/>
+       </div>
+       <div>
+         <label for="month">Month:</label>
+         <input type="text" name="month"/>
+       </div>
+       <div>
+         <label for="year">Year:</label>
+         <input type="text" name="year"/>
+       </div>
+     </fieldset>
+     <div><input type="submit" value="Add Cat"></div>   </form>
+   <script type="text/javascript">
+     $(document).ready(function() {
+       $(".delete").click(function(event) {
+         var name = $(this).parent().attr("id");
+         $.ajax({
+           url: "/cat/"+name,
+           type: 'DELETE',
+           dataType: 'text',
+           success: function() {
+             $('#'+name).remove();
+           }
+         });
+       });
+     });
+   </script>
+
+
+			
+			
+			
+		</div>
+	
+	
+		<!--End of main contain-->
+	
+	
+	
+		<br><br>
+		<div id="footer">
+			<p>RMIT VIETNAM: Course: Web application</p>
+			<pre style="font-size:120%;">
+				Authors:
+					Tran Thuy Tien - s3445682
+					Nguyen Manh Tri - s3425478
+		</pre>
+		</div>
+	
+	
+	</div>
+	
+	
+
+</body>
+</html>
+{% endautoescape %}

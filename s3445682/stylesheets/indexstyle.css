@@ -1,0 +1,210 @@
+@import url(http://fonts.googleapis.com/css?family=Days+One);
+@import url(http://fonts.googleapis.com/css?family=Wellfleet);
+@import url(http://fonts.googleapis.com/css?family=Shanti);
+
+/*Style for whole body*/
+body
+{
+background-color:#482810;
+background-image:url('background.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+margin:0;
+padding:0;
+
+}
+
+/*Style for container*/
+#container
+{
+display:table;
+text-align:center;
+width:100%;
+
+}
+
+
+/*Style for displaying user name*/
+#welcome
+{
+font-family: 'Wellfleet', cursive;
+background-color:#e0dca0;
+color:#482810;
+left:50%;
+margin:0 auto;
+top:20px;
+width:921px;
+height:20px;
+border:1px solid #482810;
+padding:5px 0px;
+}
+
+/*Style for titile of page*/
+#title
+{
+
+width:921px;
+left:50%;
+text-align:center;
+margin:0 auto;
+color:#e0dca0;
+}
+
+/*Style for picture header*/
+#header
+{
+width:921px;
+left:50%;
+text-align:center;
+margin-right: auto; 
+margin-left: auto;
+margin-bottom: 20px;
+}
+
+
+
+
+/*Style for main menu container*/
+#menu
+{
+width:921px;
+left:50%;
+margin:0 auto;
+background-color:#e0dca0;
+
+}
+
+
+/*Style for main menu*/
+#menublock {
+
+  text-align: left;
+  display: inline;
+  margin: 0;
+left:230px;
+  list-style: none;
+ 
+}
+#menublock li {
+  font-family: 'Days One', sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #e0dca0;
+  color:#482810;
+
+}
+
+#menublock li a:link , a:visited 
+{
+text-decoration:none;
+color:#482810;
+}
+
+#menublock li a:hover , a:active 
+{
+text-decoration:none;
+color:orange;
+}
+
+#menublock li:hover {
+  background: #482810;
+  color: orange;
+}
+#menublock li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+
+}
+#menublock li ul li { 
+  background: #482810; 
+  display: block; 
+  text-shadow: 0 -1px 0 #000;
+  
+}
+
+#menublock li ul li a:link
+{
+color:#e0dca0;
+}
+
+#menublock li ul li a:visited
+{
+color:#e0dca0;
+}
+
+#menublock li ul li a:hover
+{
+color:orange;
+}
+
+#menublock li ul li a:active
+{
+color:orange;
+}
+
+
+#menublock li ul li:hover 
+{ 
+background: #e0dca0; 
+color:#482810;
+}
+
+
+
+#menublock li:hover ul 
+{
+display: block;
+opacity: 1;
+visibility: visible;
+}
+
+
+
+
+
+/*Style for content in main page*/
+#maincontent
+{
+font-family: 'Shanti', sans-serif;
+z-index:-1;
+background-color:#e0dca0;
+color:black;
+width:921px;
+left:50%;
+margin:0 auto;
+padding:50px 0px;
+
+}
+
+/*Style for footer, display authors' information*/
+#footer
+{
+font-family: 'Shanti', sans-serif;
+padding:50px 0px;
+background-color:#e0dca0;
+color:#482810;
+width:921px;
+left:50%;
+margin:0 auto;
+margin-bottom:50px;
+clear:both;
+}
+
+/*Style for table of cats*/
+#catstable
+{
+position:relative;
+left:50%;
+margin-left:0 auto;
+margin-right:0 auto;
+margin-top:20;
+}

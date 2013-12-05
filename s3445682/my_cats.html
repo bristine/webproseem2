@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head>
+<title>My cats</title>
+<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+</head>
+<body>
+<p>All my cats.</p>
+ <form action="/cats" method="get">
+   <div>
+     <label for="name">Owner name:</label>
+     <input type="text" name="name"/>
+   </div>
+   <div><input type="submit" value="Filter"></div>
+ </form>
+{% for cat in cats %}   <p>{{ cat.name }}</p>
+   <blockquote>{{ cat.description }}</blockquote>
+ {% endfor %}
+</body>
+</html>
+{% endautoescape %}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Programming - Problem Set</title>
+</head>
+
+
+<body>
+	<p style="text-align:center;font-family:verdana;font-size:160%;color:black">Problem set - Solution</p>
+	<!--SOLUTION FOR FILE string1.py-->
+	<article style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid ;">
+		<h1 style="text-align:center;font-family:verdana;font-size:150%;color:red">Problem set 1</h1>
+		<h2 style="text-align:center;font-family:verdana;font-size:120%;color:blue">String1.py</h2>
+
+
+		<p style="font-family:arial;font-size:100%;color:red">donuts</p>
+		<pre>
+def donuts(count):
+	if count < 10:
+		s = 'Number of donuts: ' + str(count)
+		return s
+	else:
+		s = 'Number of donuts: many'
+		return  s
+		</pre>
+
+		
+		<p style="font-family:arial;font-size:100%;color:red">both_ends</p>
+		<pre>
+def both_ends(s):
+	if len(s) < 2:
+		e = ''
+		return e
+	else:
+		e = s[0:2] + s[-2:]
+		return e
+		</pre>
+
+
+		<p style="font-family:arial;font-size:100%;color:red">fix_start</p>
+		<pre>
+def fix_start(s):
+	k = s[1:]
+	r = s[0] + k.replace(s[0],'*')
+	return r
+		</pre>
+
+
+		<p style="font-family:arial;font-size:100%;color:red">mix_up</p>
+		<pre>
+def mix_up(a, b):
+	
+	mix = b[0:2] + a[2:] + ' ' + a[0:2] + b[2:]
+	return mix
+		</pre>
+
+
+	<!--SOLUTION FOR FILE string2.py-->
+	</article>
+	<article style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid ;">
+		<h1 style="text-align:center;font-family:verdana;font-size:150%;color:red">Problem set 1</h1>
+		<h2 style="text-align:center;font-family:verdana;font-size:120%;color:blue">String2.py</h2>
+
+
+		<p style="font-family:arial;font-size:100%;color:red">verbing</p>
+		<pre>
+def verbing(s):
+	if len(s) >=3:
+		if s[-3:] == 'ing':
+			r = s + 'ly'
+		else:
+			r = s + 'ing'
+	else:
+		r = s
+  	return r
+		</pre>
+
+		
+		<p style="font-family:arial;font-size:100%;color:red">not_bad</p>
+		<pre>
+def not_bad(s):
+	num1 = s.find('not')
+	num2 = s.find('bad') + 3
+	old = s[num1:num2]
+	if len(old) > 3:
+		new = s.replace(old,'good')
+	else:
+		new = s
+	return new
+		</pre>
+
+
+		<p style="font-family:arial;font-size:100%;color:red">front_back</p>
+		<pre>
+def front_back(a, b):
+	if len(a)%2 == 0:
+		numa = len(a)/2
+		a1 = a[:numa]
+		a2 = a[numa:]
+	else:
+		numa = len(a)/2 + 1
+		a1 = a[:numa]
+		a2 = a[numa:]
+	if len(b)%2 == 0:
+		numb = len(b)/2
+		b1 = b[:numb]
+		b2 = b[numb:]
+	else:
+		numb = len(b)/2 + 1
+		b1 = b[:numb]
+		b2 = b[numb:]
+	new = a1 + b1 + a2 + b2
+	return new
+		</pre>
+	</article>
+
+	<!--SOLUTION FOR FILE list1.py-->
+	</article>
+	<article style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid ;">
+		<h1 style="text-align:center;font-family:verdana;font-size:150%;color:red">Problem set 1</h1>
+		<h2 style="text-align:center;font-family:verdana;font-size:120%;color:blue">list1.py</h2>
+
+
+		<p style="font-family:arial;font-size:100%;color:red">match_end</p>
+		<pre>
+def match_ends(words):
+	count = 0
+	for a in words:
+		if (len(a) >= 2 ):
+			if (a[0] == a[-1]):
+				count = count +1
+	return count
+		</pre>
+
+		
+		<p style="font-family:arial;font-size:100%;color:red">font_x</p>
+		<pre>
+def front_x(words):
+	list1 = []
+	list2 = []
+	for a in words:	
+		if a[0] == 'x':
+			list1.append(a)
+		else:
+			list2.append(a)
+	list1.sort()
+	list2.sort()
+	list12 = list1 + list2
+	return list12
+		</pre>
+
+
+		<p style="font-family:arial;font-size:100%;color:red">sort_last</p>
+		<pre>
+def sort_last(tuples):
+	for n in range(0,len(tuples)):
+		for a in range(0,len(tuples)-1):
+			take_a = tuples[a]
+			take_a1 = tuples[a+1]
+			if take_a[-1] > take_a1[-1]:
+				t = tuples[a]
+				tuples[a] = tuples[a+1]
+				tuples[a+1] = t
+	return tuples
+		</pre>
+	</article>
+
+	<!--SOLUTION FOR FILE list2.py-->
+	</article>
+	<article style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid ;">
+		<h1 style="text-align:center;font-family:verdana;font-size:150%;color:red">Problem set 1</h1>
+		<h2 style="text-align:center;font-family:verdana;font-size:120%;color:blue">list2.py</h2>
+
+
+		<p style="font-family:arial;font-size:100%;color:red">remove_adjacent</p>
+		<pre>
+def remove_adjacent(nums):
+	if nums == []:
+		return nums
+	else:
+		nums.sort()
+		newList = [nums[0]]
+		for a in range (1, len(nums)):
+			x = nums[a]
+			if nums[a] != nums[a-1]:
+				newList.append(x)
+		return newList		
+
+		</pre>
+
+		
+		<p style="font-family:arial;font-size:100%;color:red">linear_merge</p>
+		<pre>
+def linear_merge(list1, list2):
+	listAll = list1 + list2
+	listAll.sort()
+	return listAll
+		</pre>
+
+	</article>
+</body>
+</html>
